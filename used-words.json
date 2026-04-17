@@ -1,0 +1,25 @@
+{
+  "description": "Transliterations of every word that has appeared as its own card. The saudi-flashcard skill reads this before choosing a new batch and must exclude every entry. Append after each batch.",
+  "words": [
+    "shlonak",
+    "zain",
+    "wesh",
+    "laish",
+    "abgha",
+    "al-heen",
+    "gaa'id",
+    "tawwuh",
+    "khalaas",
+    "tayyib",
+    "marra",
+    "kidha",
+    "akeed",
+    "yimkin",
+    "widdi",
+    "hagg",
+    "ugub",
+    "gidar",
+    "shift",
+    "yalla"
+  ]
+}
