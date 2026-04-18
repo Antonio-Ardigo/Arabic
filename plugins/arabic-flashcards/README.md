@@ -53,7 +53,11 @@ Two TTS providers are supported:
 
 **Najdi caveat:** no native Najdi TTS voice exists in either provider. For Najdi decks the generated audio will approximate MSA pronunciation. Every card also links to Forvo so learners can hear native speakers.
 
-If no TTS provider is reachable, the script writes silent placeholder MP3s so the rest of the build still succeeds; re-run audio generation once you have network access.
+If no TTS provider is reachable (e.g. a sandbox blocks `translate.google.com`), the script skips synthesis, removes any 0-byte remnants, and drops three one-click recovery scripts next to the deck:
+
+- `regen_audio.bat` — Windows: double-click it. Checks Python, installs gTTS, synthesises all MP3s, opens `deck.html`.
+- `regen_audio.sh` — macOS/Linux: `bash regen_audio.sh`. Same flow.
+- `regen_audio.py` — any OS: `pip install gTTS && python regen_audio.py`.
 
 ## What's in the plugin
 
@@ -70,9 +74,29 @@ arabic-flashcards/
 │       │   ├── transliteration.md        # Najdi popular + MSA DIN-31635-lite
 │       │   └── tts-setup.md              # gTTS & ElevenLabs setup
 │       └── scripts/
-│           └── generate_audio.py         # TTS runner (gTTS default, ElevenLabs optional)
+│           ├── generate_audio.py         # TTS runner (gTTS default, ElevenLabs optional)
+│           ├── build_deck_html.py        # emit self-contained flip-card HTML viewer
+│           └── build_anki.py             # emit Anki 2.1+ tab-separated import file
 └── README.md
 ```
+
+## Changelog
+
+### 0.3.0
+
+- **One-click audio recovery.** When synthesis fails, `generate_audio.py` now drops three wrappers next to the deck instead of one: `regen_audio.bat` (Windows double-click), `regen_audio.sh` (macOS/Linux), and the existing `regen_audio.py`. Each Windows/Unix wrapper checks Python, installs gTTS, runs the regen, and opens `deck.html` — no more copy-pasting PowerShell snippets.
+- Updated recovery message in `generate_audio.py` lists the three options explicitly so users pick the right one on their OS.
+
+### 0.2.0
+
+- **Audio fallback rewritten.** `generate_audio.py` no longer writes silent placeholder MP3s when synthesis fails. It now cleans up 0-byte remnants and writes a standalone `regen_audio.py` next to the deck so the user can re-run on an unrestricted network. Clear recovery message is printed.
+- **New `build_deck_html.py`.** Self-contained flip-card HTML viewer (RTL Arabic, keyboard nav ← → space, shuffle, card counter). No external dependencies. Replaces hand-rolled HTML per deck.
+- **New `build_anki.py`.** Anki 2.1+ tab-separated import file with proper `#separator:tab`, `#html:false`, `#columns:…` metadata headers and 10 fixed columns.
+- `commands/create-deck.md` updated to reference the new builders instead of open-coded HTML/CSV generation.
+
+### 0.1.0
+
+- Initial release: `/create-deck` command, authoring skill with three reference files, `generate_audio.py` TTS runner.
 
 ## Credits
 

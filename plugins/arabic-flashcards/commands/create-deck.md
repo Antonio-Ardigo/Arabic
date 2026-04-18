@@ -60,11 +60,13 @@ python3 ${CLAUDE_PLUGIN_ROOT}/skills/arabic-flashcard-authoring/scripts/generate
 
 The script uses Google TTS (`gTTS`) by default (free, no key). If the env var `ELEVENLABS_API_KEY` is set and `--provider elevenlabs` is passed, it uses ElevenLabs for higher-quality audio. See `references/tts-setup.md` for install/setup. If `gTTS` isn't installed, install it with `pip install gTTS --break-system-packages` before running.
 
+**Sandbox fallback (v0.3.0).** If the environment blocks `translate.google.com` (common in Claude sandboxes with allowlists), `generate_audio.py` no longer writes silent placeholder MP3s. Instead it cleans up any 0-byte remnants and drops three one-click recovery scripts next to the manifest: `regen_audio.bat` (Windows), `regen_audio.sh` (macOS/Linux), and `regen_audio.py` (any OS). Tell the user the simple path for their machine — e.g. for Windows: "Audio was skipped because the sandbox blocks Google. Double-click `regen_audio.bat` in the deck folder — it installs gTTS and populates all MP3s in about a minute."
+
 **Caveat to state to the user:** there is no native Najdi TTS voice — for Najdi decks the generated audio will approximate MSA pronunciation. Include Forvo links on each card for native Najdi pronunciation when available.
 
 ## Step 6: Build the three output formats
 
-From the card files and `cards.json` manifest, produce:
+From the card files and `cards.json` manifest, produce three outputs. Starting in v0.2.0 the HTML and Anki outputs have **bundled builder scripts** — don't hand-roll them:
 
 1. **Markdown + JSON deck** (matches the reference GitHub repo):
    - `cards/<slug>.md` (one per card — already written in step 4)
@@ -72,14 +74,19 @@ From the card files and `cards.json` manifest, produce:
    - `index.md` (table linking every card)
    - `audio/*.mp3` (from step 5)
 
-2. **Single-file HTML deck** (`deck.html`):
-   - Self-contained HTML with flip-card UI, RTL layout for Arabic, embedded base64 audio OR relative `audio/` paths
-   - Keyboard nav (← → space), card counter, shuffle button
-   - Uses only inline CSS/JS — no external dependencies
+2. **Single-file HTML deck** (`deck.html`) — use the bundled builder:
+   ```bash
+   python3 ${CLAUDE_PLUGIN_ROOT}/skills/arabic-flashcard-authoring/scripts/build_deck_html.py \
+       --manifest <deck-folder>/cards.json
+   ```
+   Produces a self-contained flip-card viewer with RTL layout, keyboard nav (← → space, S=shuffle), card counter, and inline CSS/JS — no external dependencies.
 
-3. **Anki CSV** (`anki.csv`):
-   - Tab-separated: `Arabic ⇥ Transliteration ⇥ English ⇥ Sentence1_AR ⇥ Sentence1_EN ⇥ Sentence2_AR ⇥ Sentence2_EN ⇥ [sound:headword.mp3] ⇥ [sound:ex1.mp3] ⇥ [sound:ex2.mp3]`
-   - Instruct the user to copy `audio/*.mp3` into their Anki `collection.media` folder
+3. **Anki import file** (`anki.csv`) — use the bundled builder:
+   ```bash
+   python3 ${CLAUDE_PLUGIN_ROOT}/skills/arabic-flashcard-authoring/scripts/build_anki.py \
+       --manifest <deck-folder>/cards.json
+   ```
+   Produces an Anki 2.1+ tab-separated file with proper `#separator:tab`, `#html:false`, `#columns:…` metadata headers and 10 columns (Arabic, Transliteration, English, Sentence1/2 AR+EN, three `[sound:…]` tags). Instruct the user to copy `audio/*.mp3` into their Anki `collection.media` folder after importing.
 
 All files must be written under the workspace outputs folder in a sub-directory named `arabic-<variety>-<theme-slug>-<YYYYMMDD>/`.
 

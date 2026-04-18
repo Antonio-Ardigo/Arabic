@@ -1,6 +1,6 @@
 {
   "name": "arabic-flashcards",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Create thematic Arabic flashcard decks (Najdi Saudi or Modern Standard Arabic) with two simple example sentences per card and TTS-generated audio.",
   "author": {
     "name": "Antonio Ardigo"
