@@ -1,0 +1,588 @@
+{
+  "meta": {
+    "dialect": "Najdi Saudi Arabic",
+    "batch_id": 1,
+    "count": 20,
+    "transliteration_scheme": "See README.md. Najdi markers: ق → g, ك → ch (selective).",
+    "notes": "Najdi-only. Pan-Arabic basics (marhaba, as-salaam alaykum, na'am, la) appear inside example sentences but are not cards.",
+    "forvo_template": "https://forvo.com/word/{arabic}/#ar"
+  },
+  "cards": [
+    {
+      "id": 1,
+      "arabic": "شلونك",
+      "transliteration": "shlonak",
+      "english": "how are you? (to a man)",
+      "audio_filename": "shlonak.mp4",
+      "forvo_url": "https://forvo.com/word/شلونك/#ar",
+      "examples": [
+        {
+          "arabic": "شلونك اليوم؟",
+          "transliteration": "shlonak al-yoom?",
+          "english": "How are you today?",
+          "word_by_word": [
+            {"arabic": "شلونك", "transliteration": "shlonak", "english": "how-are-you (m.)"},
+            {"arabic": "اليوم", "transliteration": "al-yoom", "english": "today"}
+          ]
+        },
+        {
+          "arabic": "شلونك يا خوي؟",
+          "transliteration": "shlonak ya khooy?",
+          "english": "How are you, my brother?",
+          "word_by_word": [
+            {"arabic": "شلونك", "transliteration": "shlonak", "english": "how-are-you (m.)"},
+            {"arabic": "يا", "transliteration": "ya", "english": "(vocative particle)"},
+            {"arabic": "خوي", "transliteration": "khooy", "english": "my-brother"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "arabic": "زين",
+      "transliteration": "zain",
+      "english": "good / fine / nice",
+      "audio_filename": "zain.mp4",
+      "forvo_url": "https://forvo.com/word/زين/#ar",
+      "examples": [
+        {
+          "arabic": "أنا زين، الحمد لله",
+          "transliteration": "ana zain, al-hamdu lillah",
+          "english": "I'm fine, thank God.",
+          "word_by_word": [
+            {"arabic": "أنا", "transliteration": "ana", "english": "I"},
+            {"arabic": "زين", "transliteration": "zain", "english": "fine"},
+            {"arabic": "الحمد", "transliteration": "al-hamdu", "english": "the-praise"},
+            {"arabic": "لله", "transliteration": "lillah", "english": "to-God"}
+          ]
+        },
+        {
+          "arabic": "الأكل زين مره",
+          "transliteration": "al-akl zain marra",
+          "english": "The food is really good.",
+          "word_by_word": [
+            {"arabic": "الأكل", "transliteration": "al-akl", "english": "the-food"},
+            {"arabic": "زين", "transliteration": "zain", "english": "good"},
+            {"arabic": "مره", "transliteration": "marra", "english": "very"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "arabic": "وش",
+      "transliteration": "wesh",
+      "english": "what? (Saudi)",
+      "audio_filename": "wesh.mp4",
+      "forvo_url": "https://forvo.com/word/وش/#ar",
+      "examples": [
+        {
+          "arabic": "وش تبغى؟",
+          "transliteration": "wesh tibgha?",
+          "english": "What do you want?",
+          "word_by_word": [
+            {"arabic": "وش", "transliteration": "wesh", "english": "what"},
+            {"arabic": "تبغى", "transliteration": "tibgha", "english": "you-want (m.)"}
+          ]
+        },
+        {
+          "arabic": "وش صار؟",
+          "transliteration": "wesh saar?",
+          "english": "What happened?",
+          "word_by_word": [
+            {"arabic": "وش", "transliteration": "wesh", "english": "what"},
+            {"arabic": "صار", "transliteration": "saar", "english": "happened"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "arabic": "ليش",
+      "transliteration": "laish",
+      "english": "why?",
+      "audio_filename": "laish.mp4",
+      "forvo_url": "https://forvo.com/word/ليش/#ar",
+      "examples": [
+        {
+          "arabic": "ليش ما جيت؟",
+          "transliteration": "laish ma jeet?",
+          "english": "Why didn't you come?",
+          "word_by_word": [
+            {"arabic": "ليش", "transliteration": "laish", "english": "why"},
+            {"arabic": "ما", "transliteration": "ma", "english": "not"},
+            {"arabic": "جيت", "transliteration": "jeet", "english": "you-came (m.)"}
+          ]
+        },
+        {
+          "arabic": "ليش كذا؟",
+          "transliteration": "laish kidha?",
+          "english": "Why like this?",
+          "word_by_word": [
+            {"arabic": "ليش", "transliteration": "laish", "english": "why"},
+            {"arabic": "كذا", "transliteration": "kidha", "english": "like-this"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "arabic": "أبغى",
+      "transliteration": "abgha",
+      "english": "I want (Najdi/Hijazi; MSA is أريد)",
+      "audio_filename": "abgha.mp4",
+      "forvo_url": "https://forvo.com/word/أبغى/#ar",
+      "examples": [
+        {
+          "arabic": "أبغى ماء",
+          "transliteration": "abgha maay",
+          "english": "I want water.",
+          "word_by_word": [
+            {"arabic": "أبغى", "transliteration": "abgha", "english": "I-want"},
+            {"arabic": "ماء", "transliteration": "maay", "english": "water"}
+          ]
+        },
+        {
+          "arabic": "أبغى أروح البيت",
+          "transliteration": "abgha aruh al-bait",
+          "english": "I want to go home.",
+          "word_by_word": [
+            {"arabic": "أبغى", "transliteration": "abgha", "english": "I-want"},
+            {"arabic": "أروح", "transliteration": "aruh", "english": "I-go"},
+            {"arabic": "البيت", "transliteration": "al-bait", "english": "the-house"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "arabic": "الحين",
+      "transliteration": "al-heen",
+      "english": "now (Najdi; MSA is الآن)",
+      "audio_filename": "al-heen.mp4",
+      "forvo_url": "https://forvo.com/word/الحين/#ar",
+      "examples": [
+        {
+          "arabic": "الحين أنا قاعد آكل",
+          "transliteration": "al-heen ana gaa'id aakol",
+          "english": "Right now I'm eating.",
+          "word_by_word": [
+            {"arabic": "الحين", "transliteration": "al-heen", "english": "now"},
+            {"arabic": "أنا", "transliteration": "ana", "english": "I"},
+            {"arabic": "قاعد", "transliteration": "gaa'id", "english": "currently (m.)"},
+            {"arabic": "آكل", "transliteration": "aakol", "english": "I-eat"}
+          ]
+        },
+        {
+          "arabic": "تعال الحين",
+          "transliteration": "ta'aal al-heen",
+          "english": "Come now.",
+          "word_by_word": [
+            {"arabic": "تعال", "transliteration": "ta'aal", "english": "come (imp. m.)"},
+            {"arabic": "الحين", "transliteration": "al-heen", "english": "now"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "arabic": "قاعد",
+      "transliteration": "gaa'id",
+      "english": "currently (progressive marker; lit. 'sitting')",
+      "audio_filename": "gaa-id.mp4",
+      "forvo_url": "https://forvo.com/word/قاعد/#ar",
+      "examples": [
+        {
+          "arabic": "قاعد أشتغل",
+          "transliteration": "gaa'id ashtaghil",
+          "english": "I'm working (right now).",
+          "word_by_word": [
+            {"arabic": "قاعد", "transliteration": "gaa'id", "english": "currently (m.)"},
+            {"arabic": "أشتغل", "transliteration": "ashtaghil", "english": "I-work"}
+          ]
+        },
+        {
+          "arabic": "وش قاعد تسوي؟",
+          "transliteration": "wesh gaa'id tsawwi?",
+          "english": "What are you doing?",
+          "word_by_word": [
+            {"arabic": "وش", "transliteration": "wesh", "english": "what"},
+            {"arabic": "قاعد", "transliteration": "gaa'id", "english": "currently (m.)"},
+            {"arabic": "تسوي", "transliteration": "tsawwi", "english": "you-do (m.)"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "arabic": "توّه",
+      "transliteration": "tawwuh",
+      "english": "just (now) — inflects: tawwni = I just, tawwak = you just, tawwuh = he just",
+      "audio_filename": "tawwuh.mp4",
+      "forvo_url": "https://forvo.com/word/توه/#ar",
+      "examples": [
+        {
+          "arabic": "توّه وصل",
+          "transliteration": "tawwuh wasal",
+          "english": "He just arrived.",
+          "word_by_word": [
+            {"arabic": "توّه", "transliteration": "tawwuh", "english": "just (he)"},
+            {"arabic": "وصل", "transliteration": "wasal", "english": "arrived"}
+          ]
+        },
+        {
+          "arabic": "توّني جيت",
+          "transliteration": "tawwni jeet",
+          "english": "I just came.",
+          "word_by_word": [
+            {"arabic": "توّني", "transliteration": "tawwni", "english": "just (I)"},
+            {"arabic": "جيت", "transliteration": "jeet", "english": "I-came"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "arabic": "خلاص",
+      "transliteration": "khalaas",
+      "english": "done / enough / okay (that's settled)",
+      "audio_filename": "khalaas.mp4",
+      "forvo_url": "https://forvo.com/word/خلاص/#ar",
+      "examples": [
+        {
+          "arabic": "خلاص، فهمت",
+          "transliteration": "khalaas, fihamt",
+          "english": "Okay, I understood.",
+          "word_by_word": [
+            {"arabic": "خلاص", "transliteration": "khalaas", "english": "okay / done"},
+            {"arabic": "فهمت", "transliteration": "fihamt", "english": "I-understood"}
+          ]
+        },
+        {
+          "arabic": "خلاص الشغل؟",
+          "transliteration": "khalaas ash-shughul?",
+          "english": "Is the work finished?",
+          "word_by_word": [
+            {"arabic": "خلاص", "transliteration": "khalaas", "english": "finished"},
+            {"arabic": "الشغل", "transliteration": "ash-shughul", "english": "the-work"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "arabic": "طيب",
+      "transliteration": "tayyib",
+      "english": "okay (discourse marker) / nice (of a person)",
+      "audio_filename": "tayyib.mp4",
+      "forvo_url": "https://forvo.com/word/طيب/#ar",
+      "examples": [
+        {
+          "arabic": "طيب، نشوفك بكرة",
+          "transliteration": "tayyib, nshoofak bukra",
+          "english": "Okay, we'll see you tomorrow.",
+          "word_by_word": [
+            {"arabic": "طيب", "transliteration": "tayyib", "english": "okay"},
+            {"arabic": "نشوفك", "transliteration": "nshoofak", "english": "we-see-you (m.)"},
+            {"arabic": "بكرة", "transliteration": "bukra", "english": "tomorrow"}
+          ]
+        },
+        {
+          "arabic": "هو طيب مره",
+          "transliteration": "huwa tayyib marra",
+          "english": "He's really nice.",
+          "word_by_word": [
+            {"arabic": "هو", "transliteration": "huwa", "english": "he"},
+            {"arabic": "طيب", "transliteration": "tayyib", "english": "nice"},
+            {"arabic": "مره", "transliteration": "marra", "english": "very"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "arabic": "مره",
+      "transliteration": "marra",
+      "english": "very / a lot (Najdi intensifier, placed after adjective)",
+      "audio_filename": "marra.mp4",
+      "forvo_url": "https://forvo.com/word/مره/#ar",
+      "examples": [
+        {
+          "arabic": "الجو حار مره",
+          "transliteration": "al-jaww haar marra",
+          "english": "The weather is really hot.",
+          "word_by_word": [
+            {"arabic": "الجو", "transliteration": "al-jaww", "english": "the-weather"},
+            {"arabic": "حار", "transliteration": "haar", "english": "hot"},
+            {"arabic": "مره", "transliteration": "marra", "english": "very"}
+          ]
+        },
+        {
+          "arabic": "زين مره",
+          "transliteration": "zain marra",
+          "english": "Very good.",
+          "word_by_word": [
+            {"arabic": "زين", "transliteration": "zain", "english": "good"},
+            {"arabic": "مره", "transliteration": "marra", "english": "very"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "arabic": "كذا",
+      "transliteration": "kidha",
+      "english": "like this / like that",
+      "audio_filename": "kidha.mp4",
+      "forvo_url": "https://forvo.com/word/كذا/#ar",
+      "examples": [
+        {
+          "arabic": "سوّها كذا",
+          "transliteration": "sawwha kidha",
+          "english": "Do it like this.",
+          "word_by_word": [
+            {"arabic": "سوّها", "transliteration": "sawwha", "english": "do-it (f., imp.)"},
+            {"arabic": "كذا", "transliteration": "kidha", "english": "like-this"}
+          ]
+        },
+        {
+          "arabic": "ليش كذا؟",
+          "transliteration": "laish kidha?",
+          "english": "Why like this?",
+          "word_by_word": [
+            {"arabic": "ليش", "transliteration": "laish", "english": "why"},
+            {"arabic": "كذا", "transliteration": "kidha", "english": "like-this"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "arabic": "أكيد",
+      "transliteration": "akeed",
+      "english": "definitely / for sure",
+      "audio_filename": "akeed.mp4",
+      "forvo_url": "https://forvo.com/word/أكيد/#ar",
+      "examples": [
+        {
+          "arabic": "أكيد بجي",
+          "transliteration": "akeed baji",
+          "english": "I'll definitely come.",
+          "word_by_word": [
+            {"arabic": "أكيد", "transliteration": "akeed", "english": "definitely"},
+            {"arabic": "بجي", "transliteration": "baji", "english": "I-will-come"}
+          ]
+        },
+        {
+          "arabic": "أكيد زين",
+          "transliteration": "akeed zain",
+          "english": "Definitely good.",
+          "word_by_word": [
+            {"arabic": "أكيد", "transliteration": "akeed", "english": "definitely"},
+            {"arabic": "زين", "transliteration": "zain", "english": "good"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "arabic": "يمكن",
+      "transliteration": "yimkin",
+      "english": "maybe",
+      "audio_filename": "yimkin.mp4",
+      "forvo_url": "https://forvo.com/word/يمكن/#ar",
+      "examples": [
+        {
+          "arabic": "يمكن يجي بكرة",
+          "transliteration": "yimkin yiji bukra",
+          "english": "Maybe he'll come tomorrow.",
+          "word_by_word": [
+            {"arabic": "يمكن", "transliteration": "yimkin", "english": "maybe"},
+            {"arabic": "يجي", "transliteration": "yiji", "english": "he-comes"},
+            {"arabic": "بكرة", "transliteration": "bukra", "english": "tomorrow"}
+          ]
+        },
+        {
+          "arabic": "يمكن، ما أدري",
+          "transliteration": "yimkin, ma adri",
+          "english": "Maybe, I don't know.",
+          "word_by_word": [
+            {"arabic": "يمكن", "transliteration": "yimkin", "english": "maybe"},
+            {"arabic": "ما", "transliteration": "ma", "english": "not"},
+            {"arabic": "أدري", "transliteration": "adri", "english": "I-know"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "arabic": "ودّي",
+      "transliteration": "widdi",
+      "english": "I'd like to / I want to (Najdi)",
+      "audio_filename": "widdi.mp4",
+      "forvo_url": "https://forvo.com/word/ودي/#ar",
+      "examples": [
+        {
+          "arabic": "ودّي أنام",
+          "transliteration": "widdi anaam",
+          "english": "I want to sleep.",
+          "word_by_word": [
+            {"arabic": "ودّي", "transliteration": "widdi", "english": "I-want-to"},
+            {"arabic": "أنام", "transliteration": "anaam", "english": "I-sleep"}
+          ]
+        },
+        {
+          "arabic": "ودّي أشوفك",
+          "transliteration": "widdi ashoofak",
+          "english": "I want to see you.",
+          "word_by_word": [
+            {"arabic": "ودّي", "transliteration": "widdi", "english": "I-want-to"},
+            {"arabic": "أشوفك", "transliteration": "ashoofak", "english": "I-see-you (m.)"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "arabic": "حق",
+      "transliteration": "hagg",
+      "english": "belonging to / for (Najdi possessive particle)",
+      "audio_filename": "hagg.mp4",
+      "forvo_url": "https://forvo.com/word/حق/#ar",
+      "examples": [
+        {
+          "arabic": "هذا حقي",
+          "transliteration": "hatha haggi",
+          "english": "This is mine.",
+          "word_by_word": [
+            {"arabic": "هذا", "transliteration": "hatha", "english": "this (m.)"},
+            {"arabic": "حقي", "transliteration": "haggi", "english": "mine"}
+          ]
+        },
+        {
+          "arabic": "السيارة حق أخوي",
+          "transliteration": "as-sayyaara hagg akhooy",
+          "english": "The car belongs to my brother.",
+          "word_by_word": [
+            {"arabic": "السيارة", "transliteration": "as-sayyaara", "english": "the-car"},
+            {"arabic": "حق", "transliteration": "hagg", "english": "belonging-to"},
+            {"arabic": "أخوي", "transliteration": "akhooy", "english": "my-brother"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "arabic": "عقب",
+      "transliteration": "ugub",
+      "english": "after / afterwards (Najdi; MSA is بعد)",
+      "audio_filename": "ugub.mp4",
+      "forvo_url": "https://forvo.com/word/عقب/#ar",
+      "examples": [
+        {
+          "arabic": "عقب الدوام",
+          "transliteration": "ugub ad-dawaam",
+          "english": "After work.",
+          "word_by_word": [
+            {"arabic": "عقب", "transliteration": "ugub", "english": "after"},
+            {"arabic": "الدوام", "transliteration": "ad-dawaam", "english": "the-work-hours"}
+          ]
+        },
+        {
+          "arabic": "نشوفك عقب",
+          "transliteration": "nshoofak ugub",
+          "english": "We'll see you later.",
+          "word_by_word": [
+            {"arabic": "نشوفك", "transliteration": "nshoofak", "english": "we-see-you (m.)"},
+            {"arabic": "عقب", "transliteration": "ugub", "english": "afterwards"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "arabic": "قدر",
+      "transliteration": "gidar",
+      "english": "he was able / could (Najdi ق → g)",
+      "audio_filename": "gidar.mp4",
+      "forvo_url": "https://forvo.com/word/قدر/#ar",
+      "examples": [
+        {
+          "arabic": "ما قدر يجي",
+          "transliteration": "ma gidar yiji",
+          "english": "He couldn't come.",
+          "word_by_word": [
+            {"arabic": "ما", "transliteration": "ma", "english": "not"},
+            {"arabic": "قدر", "transliteration": "gidar", "english": "was-able (he)"},
+            {"arabic": "يجي", "transliteration": "yiji", "english": "he-comes"}
+          ]
+        },
+        {
+          "arabic": "قدرت أسوّيها",
+          "transliteration": "gidart asawwiha",
+          "english": "I was able to do it.",
+          "word_by_word": [
+            {"arabic": "قدرت", "transliteration": "gidart", "english": "I-was-able"},
+            {"arabic": "أسوّيها", "transliteration": "asawwiha", "english": "I-do-it (f.)"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "arabic": "شفت",
+      "transliteration": "shift",
+      "english": "I saw / you saw (m.) (Najdi; MSA is رأيت)",
+      "audio_filename": "shift.mp4",
+      "forvo_url": "https://forvo.com/word/شفت/#ar",
+      "examples": [
+        {
+          "arabic": "شفتك أمس",
+          "transliteration": "shiftak ams",
+          "english": "I saw you yesterday.",
+          "word_by_word": [
+            {"arabic": "شفتك", "transliteration": "shiftak", "english": "I-saw-you (m.)"},
+            {"arabic": "أمس", "transliteration": "ams", "english": "yesterday"}
+          ]
+        },
+        {
+          "arabic": "وش شفت؟",
+          "transliteration": "wesh shift?",
+          "english": "What did you see?",
+          "word_by_word": [
+            {"arabic": "وش", "transliteration": "wesh", "english": "what"},
+            {"arabic": "شفت", "transliteration": "shift", "english": "you-saw (m.)"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "arabic": "يالله",
+      "transliteration": "yalla",
+      "english": "let's go / come on / hurry",
+      "audio_filename": "yalla.mp4",
+      "forvo_url": "https://forvo.com/word/يالله/#ar",
+      "examples": [
+        {
+          "arabic": "يالله، نروح",
+          "transliteration": "yalla, nruh",
+          "english": "Come on, let's go.",
+          "word_by_word": [
+            {"arabic": "يالله", "transliteration": "yalla", "english": "let's-go"},
+            {"arabic": "نروح", "transliteration": "nruh", "english": "we-go"}
+          ]
+        },
+        {
+          "arabic": "يالله بسرعة",
+          "transliteration": "yalla b-sur'a",
+          "english": "Hurry up.",
+          "word_by_word": [
+            {"arabic": "يالله", "transliteration": "yalla", "english": "come-on"},
+            {"arabic": "بسرعة", "transliteration": "b-sur'a", "english": "with-speed"}
+          ]
+        }
+      ]
+    }
+  ]
+}
