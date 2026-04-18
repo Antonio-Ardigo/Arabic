@@ -35,6 +35,14 @@ Load the reference file that matches the sub-task:
 - **`references/transliteration.md`** — Two transliteration schemes (Najdi popular / MSA DIN-31635-lite), letter table, which scheme to use when.
 - **`references/tts-setup.md`** — How to install and invoke the audio generation script, supported providers (gTTS default, ElevenLabs optional), known limitations for Najdi.
 
+## Bundled scripts
+
+All scripts live in `scripts/` and are invokable with `python3 ${CLAUDE_PLUGIN_ROOT}/skills/arabic-flashcard-authoring/scripts/<name>.py`:
+
+- **`generate_audio.py`** — synthesises MP3s from `cards.json` via gTTS (default) or ElevenLabs. From v0.2.0 it no longer writes silent placeholder MP3s on failure; it removes 0-byte remnants and drops self-contained recovery scripts next to the manifest. From v0.3.0 it emits three wrappers for one-click recovery: `regen_audio.bat` (Windows double-click), `regen_audio.sh` (macOS/Linux), and `regen_audio.py` (any OS). Each Windows/Unix wrapper checks Python, installs gTTS, runs the regen, and opens `deck.html`.
+- **`build_deck_html.py`** — emits a self-contained flip-card `deck.html` (RTL Arabic, keyboard nav, shuffle) from `cards.json`. No external dependencies.
+- **`build_anki.py`** — emits an Anki 2.1+ `anki.csv` with `#separator:tab`, `#html:false`, `#columns:…` headers and 10 columns (Arabic, Translit, English, Sentence1/2 AR+EN, three `[sound:…]` tags).
+
 ## Workflow for building a deck
 
 1. **Clarify variety and theme** — `najdi | msa` and a concrete theme string. Default deck size is **10** cards.
