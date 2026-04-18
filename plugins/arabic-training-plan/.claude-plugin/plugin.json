@@ -1,0 +1,23 @@
+{
+  "name": "arabic-training-plan",
+  "version": "0.1.0",
+  "description": "Build and run a Test-Teach-Test training plan for Arabic vocabulary (Najdi Saudi or MSA). Decomposes a learning goal into SMART / Motivation / Core Principles (dialect grammar) / Key Facts (vocabulary batches). Interactive TTT sessions instead of flashcards. Audio generated once per word into a referenced folder. Spaced retention checks drive each sub-goal toward full memorisation.",
+  "author": {
+    "name": "Antonio Ardigo"
+  },
+  "homepage": "https://github.com/Antonio-Ardigo/Arabic",
+  "repository": "https://github.com/Antonio-Ardigo/Arabic",
+  "license": "MIT",
+  "keywords": [
+    "arabic",
+    "najdi",
+    "msa",
+    "language-learning",
+    "training",
+    "test-teach-test",
+    "ttt",
+    "spaced-repetition",
+    "vocabulary",
+    "tts"
+  ]
+}

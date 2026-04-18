@@ -1,0 +1,18 @@
+{
+  "name": "arabic-plugins",
+  "owner": {
+    "name": "Antonio Ardigo"
+  },
+  "plugins": [
+    {
+      "name": "arabic-flashcards",
+      "source": "./plugins/arabic-flashcards",
+      "description": "Create thematic Arabic flashcard decks (Najdi Saudi or Modern Standard Arabic) with two simple example sentences per card and TTS-generated audio. Emits Markdown cards, a single-file HTML flip-card viewer, and an Anki import CSV."
+    },
+    {
+      "name": "arabic-training-plan",
+      "source": "./plugins/arabic-training-plan",
+      "description": "Build and run a Test-Teach-Test training plan for Arabic vocabulary. SMART goal, motivation, core principles (dialect grammar), and key-fact sub-goals covering word batches. Interactive TTT sessions only -- no flashcards. Audio generated once per word and referenced by filename. Spaced retention drives each sub-goal to Mastery 5/5."
+    }
+  ]
+}
